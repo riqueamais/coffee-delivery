@@ -4,6 +4,7 @@ export const CoffeeCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
 
   background-color: ${(props) => props.theme['background-card']};
@@ -53,4 +54,21 @@ export const CoffeeCardCategories = styled.div`
   font-weight: 600;
   text-transform: uppercase;
   color: ${(props) => props.theme['yellow-700']};
+`
+
+export const CoffeeCardPrice = styled.div`
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+
+  font-size: 0.875rem;
+  line-height: 130%;
+  color: ${(props) => props.theme['brown-500']};
+
+  b {
+    font-size: 1.5rem;
+    line-height: 130%;
+    font-family: 'Baloo 2', sans-serif;
+    color: ${(props) => props.theme['brown-700']};
+  }
 `

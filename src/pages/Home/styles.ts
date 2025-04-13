@@ -139,4 +139,22 @@ export const Products = styled.section`
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 991px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 567px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 `

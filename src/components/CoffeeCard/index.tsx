@@ -2,6 +2,7 @@ import {
   CoffeeCardBoxCategories,
   CoffeeCardCategories,
   CoffeeCardContainer,
+  CoffeeCardPrice,
 } from './styles'
 
 export interface CoffeeProduct {
@@ -50,7 +51,10 @@ export function CoffeeCard(props: CoffeeProduct) {
 
       <p>{props.description}</p>
 
-      <span>{props.price.toFixed(2)}</span>
+      <CoffeeCardPrice>
+        R$
+        <b>{props.price.toFixed(2)}</b>
+      </CoffeeCardPrice>
     </CoffeeCardContainer>
   )
 }
