@@ -121,3 +121,22 @@ export const BannerPrincipalBoxImage = styled.div`
     margin-top: 30px;
   }
 `
+
+export const Products = styled.section`
+  margin-top: 32px;
+  margin-bottom: 100px;
+
+  h2 {
+    font-size: 2rem;
+    line-height: 130%;
+    font-family: 'Baloo 2', sans-serif;
+    color: ${(props) => props.theme['brown-700']};
+    margin-bottom: 54px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+`
