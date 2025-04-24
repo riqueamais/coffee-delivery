@@ -56,6 +56,24 @@ export const CoffeeCardCategories = styled.div`
   color: ${(props) => props.theme['yellow-700']};
 `
 
+export const CoffeeCardBoxPrice = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .errors {
+    color: red;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+`
+
 export const CoffeeCardPrice = styled.div`
   display: flex;
   align-items: baseline;
@@ -71,4 +89,39 @@ export const CoffeeCardPrice = styled.div`
     font-family: 'Baloo 2', sans-serif;
     color: ${(props) => props.theme['brown-700']};
   }
+`
+
+export const CoffeeCardCounter = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  background-color: ${(props) => props.theme['gray-300']};
+  padding: 8px;
+  border-radius: 6px;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+    color: ${(props) => props.theme['purple-500']};
+    font-weight: 700;
+    cursor: pointer;
+  }
+`
+
+export const CoffeeCardSubmit = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+
+  background-color: ${(props) => props.theme['purple-700']};
+  color: ${(props) => props.theme['white']};
 `
